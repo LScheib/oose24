@@ -58,59 +58,27 @@ function validateLevel(level) {
     }
 }
 
-function makeProf(person, chair, positionKind, level) {
-    let prof = clone(roleProf);
+function makeRole(person, role, chair, positionKind, level) {
+    let newRole = clone(role);
 
     // Set the person object as the prototype of the professor object
-    prof.__proto__ = person;
+    newRole.__proto__ = person;
 
     // Assign chair property
-    prof.chair = chair;
+    newRole.chair = chair;
 
     // Validate positionKind and level
-    prof.positionKind = validatePositionKind(positionKind);
-    prof.level = validateLevel(level);
+    newRole.positionKind = validatePositionKind(positionKind);
+    newRole.level = validateLevel(level);
 
-    return prof;
+    return newRole;
 }
 
-function makeHeadExamBoard(person, chair, positionKind, level) {
-    let headExamBoard = clone(roleHeadExamBoard);
-
-    // Set the person object as the prototype of the professor object
-    headExamBoard.__proto__ = person;
-
-    // Assign chair property
-    headExamBoard.chair = chair;
-
-    // Validate positionKind and level
-    headExamBoard.positionKind = validatePositionKind(positionKind);
-    headExamBoard.level = validateLevel(level);
-
-    return headExamBoard;
-}
-
-function makeHeadDept(person, chair, positionKind, level) {
-    let headDept = clone(roleHeadDept);
-
-    // Set the person object as the prototype of the professor object
-    headDept.__proto__ = person;
-
-    // Assign chair property
-    headDept.chair = chair;
-
-    // Validate positionKind and level
-    headDept.positionKind = validatePositionKind(positionKind);
-    headDept.level = validateLevel(level);
-
-    return headDept;
-}
-
-let roleProfAlice = makeProf(alice, "software engineering", "full professor", "W2");
+let roleProfAlice = makeRole(alice, roleProf, "software engineering", "full professor", "W2");
 console.log(roleProfAlice.getInfo());
 
-let roleHeadExamBoardAlice = makeHeadExamBoard(alice, "software engineering", "full professor", "W2");
+let roleHeadExamBoardAlice = makeRole(alice, roleHeadExamBoard, "software engineering", "full professor", "W2");
 console.log(roleHeadExamBoardAlice.getInfo());
 
-let roleHeadDeptAlice = makeHeadDept(alice, "software engineering", "full professor", "W2");
+let roleHeadDeptAlice = makeRole(alice, roleHeadDept, "software engineering", "full professor", "W2");
 console.log(roleHeadDeptAlice.getInfo());
