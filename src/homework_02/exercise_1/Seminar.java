@@ -2,29 +2,46 @@ package homework_02.exercise_1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
-public class Seminar {
+public class Seminar<part_T extends IStudent>
+{
     private String name;
     private String id;
+    private List<part_T> participants;
 
-    //TODO: List of participants
-
-    public Seminar(String name, String id) {
+    public Seminar(String name, String id)
+    {
         this.name = name;
         this.id = id;
-        //TODO: Initialize list of participants
+        this.participants = new ArrayList<part_T>();
     }
 
-    public void addParticipant(/*TODO: Parameter*/) {
-        //TODO: Add to list of participants
+    public void addParticipant(part_T participant)
+    {
+        this.participants.add(participant);
     }
 
-    public /*TODO: Return Type*/ getParticipants() {
-        return participants;
+    public List<part_T> getParticipants()
+    {
+        return this.participants;
     }
 
+    public List<part_T> getParticipantsFromStudyProgram(String subject)
+    {
+        List<part_T> participants_from = new ArrayList<part_T>();
+        for (part_T participant : getParticipants())
+        {
+            if (Objects.equals(participant.getSubject(), subject))
+            {
+                participants_from.add(participant);
+            }
+        }
+        return participants_from;
+    }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Seminar<PhD> phdStudents = new Seminar<PhD>("Doktorandenseminar", "");
         phdStudents.addParticipant(new PhD("Adrian", "Software Engineering"));
         phdStudents.addParticipant(new PhD("Alice", "Software Engineering"));
