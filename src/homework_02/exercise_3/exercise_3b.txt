@@ -1,0 +1,11 @@
+When you execute the expression student1 + student2 + student3, the following steps occur:
+
+1. student1 + student2 is evaluated first. This triggers the __add__ method in the Student class, which creates a new LearningGroup object and adds student1 and student2 to it.
+
+2. The result of student1 + student2 is a LearningGroup object containing student1 and student2. -> ['Alice Wonderland 42424242', 'Bob Miller 1564153']
+
+3. Then, the result of student1 + student2 is added to student3. This triggers the __add__ method in the LearningGroup class, which adds student3 to the existing LearningGroup object.
+
+4. The final result is a LearningGroup object containing student1, student2, and student3. -> ['Alice Wonderland 42424242', 'Bob Miller 1564153', 'Charly Robert 4681398']
+
+Therefore, the outcome of student1 + student2 + student3 is a LearningGroup object with all three students in it.
