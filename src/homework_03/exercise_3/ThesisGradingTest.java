@@ -94,7 +94,7 @@ class ThesisGradingTest {
     }
 
     @Test
-    void calculcateFinalGrade_unnecessaryThirdGrade() {
+    void calculateFinalGrade_unnecessaryThirdGrade() {
         //Arrange
         double grade1 = 1.0;
         double grade2 = 2.0;
