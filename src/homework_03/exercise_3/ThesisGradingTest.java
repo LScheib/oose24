@@ -75,7 +75,7 @@ class ThesisGradingTest {
         //Act & Assert
         NoSuchGradeException ex = assertThrows(NoSuchGradeException.class, () -> {
             //Act
-            thesisGrading.calculcateFinalGrade(grade1, grade2, grade3);
+            thesisGrading.calculateFinalGrade(grade1, grade2, grade3);
         });
     }
 
