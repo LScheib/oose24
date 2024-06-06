@@ -1,4 +1,4 @@
-package hw3.a3;
+package homework_03.exercise_3;
 
 import java.util.ArrayList;
 import java.util.Collections;
