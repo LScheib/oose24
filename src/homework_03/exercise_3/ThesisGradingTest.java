@@ -47,7 +47,7 @@ class ThesisGradingTest {
     }
 
     @Test
-    void calculcateFinalGrade_validGrades() {
+    void calculateFinalGrade_validGrades() {
         //Arrange
         double grade1 = 2.0;
         double grade2 = 4.0;
