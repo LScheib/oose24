@@ -80,7 +80,7 @@ class ThesisGradingTest {
     }
 
     @Test
-    void calculcateFinalGrade_invalidThirdGrade() {
+    void calculateFinalGrade_invalidThirdGrade() {
         //Arrange
         double grade1 = 1.3;
         double grade2 = 3.7;
