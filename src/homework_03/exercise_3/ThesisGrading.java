@@ -7,7 +7,7 @@ import java.util.List;
 public class ThesisGrading {
     private static final List<Double> validSingleGrades = List.of(1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0, 5.0);
 
-    public double calculcateFinalGrade(double grade1, double grade2, double grade3) throws NoSuchGradeException, ThirdExaminerNeededException {
+    public double calculateFinalGrade(double grade1, double grade2, double grade3) throws NoSuchGradeException, ThirdExaminerNeededException {
         if(!validSingleGrades.contains(grade1)) {
             throw new NoSuchGradeException(grade1);
         }
