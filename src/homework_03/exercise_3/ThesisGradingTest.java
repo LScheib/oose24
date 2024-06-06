@@ -1,4 +1,4 @@
-package hw3.a3;
+package homework_03.exercise_3;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
