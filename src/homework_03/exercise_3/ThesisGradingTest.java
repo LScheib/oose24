@@ -89,7 +89,7 @@ class ThesisGradingTest {
         //Act & Assert
         ThirdExaminerNeededException ex = assertThrows(ThirdExaminerNeededException.class, () -> {
             //Act
-            thesisGrading.calculcateFinalGrade(grade1, grade2, grade3);
+            thesisGrading.calculateFinalGrade(grade1, grade2, grade3);
         });
     }
 
