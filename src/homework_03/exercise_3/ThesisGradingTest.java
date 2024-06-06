@@ -66,7 +66,7 @@ class ThesisGradingTest {
     }
 
     @Test
-    void calculcateFinalGrade_invalidSecondGrade() {
+    void calculateFinalGrade_invalidSecondGrade() {
         //Arrange
         double grade1 = 2.0;
         double grade2 = 0.0;
