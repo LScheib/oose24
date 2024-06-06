@@ -103,7 +103,7 @@ class ThesisGradingTest {
 
         //Act
         try{
-            double actual = thesisGrading.calculcateFinalGrade(grade1, grade2, grade3);
+            double actual = thesisGrading.calculateFinalGrade(grade1, grade2, grade3);
             //Assert
             assertEquals(expected, actual);
         }
