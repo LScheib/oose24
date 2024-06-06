@@ -28,7 +28,7 @@ class ThesisGradingTest {
     }
 
     @Test
-    void calculcateFinalGrade_validGrades_noThirdExaminer() {
+    void calculateFinalGrade_validGrades_noThirdExaminer() {
         //Arrange
         double grade1 = 1.0;
         double grade2 = 2.0;
