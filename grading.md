@@ -19,3 +19,15 @@ Good job!
 | 2         | 4/4       |
 | 3         | 2/2       |
 | **Total** | 10.0/10.0 |
+
+## HW3
+
+| Exercise  | Points    |
+|-----------|-----------|
+| 1         | 3.5/4     |
+| 2         | 2/2       |
+| 3         | 4/4       |
+| **Total** | 9.5/10.0 |
+
+- Exercise 1: Your requirement 5 should actually be a process requirement, -0.5p.
+- Exercise 2: Should have been provided as a drawing, but your solution is also fine due to the exercise text.
