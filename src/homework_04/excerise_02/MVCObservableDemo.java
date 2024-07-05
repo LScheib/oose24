@@ -5,7 +5,7 @@ public class MVCObservableDemo {
         Model model = new Model();
         Controller controller = new Controller(model);
 
-        // Give View controller so it can theoretically call userEventUpdate
+        // Give each View the controller instance, so it can theoretically call userEventUpdate
         View view1 = new View(controller, "View1");
         View view2 = new View(controller, "View2");
         View view3 = new View(controller, "View3");
