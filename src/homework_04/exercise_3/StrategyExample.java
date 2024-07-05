@@ -12,7 +12,7 @@ public class StrategyExample {
         System.out.println("The maximum of 1 and 2 is: " + context.executeStrategy(1, 2));
 
         context.setStrategy(min);
-        System.out.println("The minimum of 1 and 2 is: " + context.executeStrategy(10, 5));
+        System.out.println("The minimum of 1 and 2 is: " + context.executeStrategy(1, 2));
 
         Context<Double> context2 = new Context<Double>(multiply);
         System.out.println("2.5 * 5.5 = " + context2.executeStrategy(2.5, 5.5));
